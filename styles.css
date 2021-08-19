@@ -1,0 +1,116 @@
+/* div {
+  /* height: 150px;
+  width: 300px; */
+/* background: #cc5; */
+/* margin: 0 auto;    this centers on center page*/
+/* background: radial-gradient(shape, centercolor, outercolor); */
+body {
+  font-family: "Poller One", cursive;
+  background: rgba(red, green, blue, 1);
+}
+
+.robot {
+  position: relative;
+  left: 200px;
+}
+
+.beep {
+  width: 5px;
+  height: 0;
+  border: 5px solid transparent;
+  border-top: 10px solid #777;
+  border-bottom: 80px solid #888;
+  position: relative;
+  left: 140px;
+}
+
+@keyframes blink {
+  50% {
+    background: radial-gradient(circle, red 15%, transparent 40%),
+      rgb(250, 174, 239);
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    background: -webkit-radial-gradient(circle, red 15%, transparent 40%),
+      rgb(250, 174, 239);
+  }
+}
+@-moz-keyframes blink {
+  50% {
+    background: -moz-radial-gradient(circle, red 15%, transparent 40%),
+      rgb(250, 174, 239);
+  }
+}
+
+.laser {
+  animation: blink 0.5s infinite;
+  -webkit-animation: blink 0.5s infinite;
+  -moz-animation: blink 0.5s infinite;
+}
+
+.brain {
+  background: radial-gradient(circle, white 15%, transparent 40%),
+    rgb(250, 174, 239);
+  background: -moz-radial-gradient(circle, white 15%, transparent 40%),
+    rgb(250, 174, 239);
+  background: -webkit-radial-gradient(circle, white 15%, transparent 40%),
+    rgb(250, 174, 239);
+  background-size: 75px 150px;
+  height: 150px;
+  width: 150px;
+  border-radius: 60px 60px 10px 10px;
+  border-bottom: 40px solid #666;
+  position: relative;
+  left: 70px;
+}
+
+.torso {
+  height: 0;
+  width: 140px;
+  border-top: 300px solid rgb(250, 174, 239);
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-radius: 20px 20px 100px 100px;
+}
+
+.left {
+  font-family: "Poller One", Verdana, arial, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 250px;
+  color: #666;
+  transform: rotate(200deg);
+  -webkit-transform: rotate(200deg);
+  -moz-transform: rotate(200deg);
+  position: relative;
+  left: -190px;
+  top: -320px;
+  z-index: -1;
+}
+
+.right {
+  font-family: "Poller One", Verdana, Arial, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 250px;
+  color: #666;
+  transform: scaleY(-1) rotate(20deg);
+  -webkit-transform: scaleY(-1) rotate(20deg);
+  -moz-transform: scaleY(-1) rotate(20deg);
+  position: relative;
+  left: -190px;
+  top: -320px;
+  z-index: -1;
+  top: -620px;
+  left: 190px;
+}
+.foot {
+  height: 40px;
+  width: 40px;
+  background: #ccc;
+  border-radius: 40px;
+  border: 15px double #999;
+  position: relative;
+  left: 110px;
+  top: -10px;
+  z-index: -1;
+}
